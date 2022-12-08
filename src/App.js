@@ -10,9 +10,10 @@ function App() {
 				<Header/>
 			</div>
 			<div className='row turulvvd'>
-					<Link className='QuizType' to={'/quiz'}>Anime</Link>
+					<Link className='QuizType' to={'/anime'}>Anime</Link>
 					<Link className='QuizType' to={'/movie'}>Movie</Link>
 					<Link className='QuizType' to={'/animal'}>Animal</Link>
+					<Link className='QuizType' to={'/quiz'}>Random</Link>
 			</div>
 		</div>
 		

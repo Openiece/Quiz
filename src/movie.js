@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Header } from "./Header"
 
 
 export function Movie() {
@@ -114,6 +115,7 @@ export function Movie() {
 	};
 	return (
 		<div className='app'>
+            <Header/>
 			{showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}

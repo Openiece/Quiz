@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Header } from "../Header"
 
 
 export function Random() {
@@ -60,6 +60,7 @@ export function Random() {
 	};
 	return (
 		<div className='app'>
+			<Header/>
 			{showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}

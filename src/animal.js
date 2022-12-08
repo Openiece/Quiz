@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Header } from "./Header"
 
 export function Animal() {
   const questions = [
@@ -113,6 +114,7 @@ export function Animal() {
   };
   return (
     <div className="app">
+        <Header/>
       {showScore ? (
         <div className="score-section">
           You scored {score} out of {questions.length}

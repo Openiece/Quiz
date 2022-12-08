@@ -6,6 +6,7 @@ import App from './App';
 import {Random} from "./component/question"
 import {Animal} from "./animal"
 import {Movie} from "./movie"
+import {Anime} from "./anime"
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -15,6 +16,7 @@ ReactDOM.render(
             <Route path="/quiz" element={<Random />} /> 
             <Route path="/animal" element={<Animal />} />
             <Route path="/movie" element={<Movie />} />
+            <Route path="/anime" element={<Anime />} />
         </Routes>
     </BrowserRouter>
   </React.StrictMode>,

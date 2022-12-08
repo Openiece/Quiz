@@ -7,7 +7,10 @@ export const Header = () => {
     return (
         <div>
             <div className='header row'>
-                <div className='QUIZ'>{logo}</div>
+                <div className='row'>
+                    <img className='logo' src={logo}></img>
+                    <p className='QUIZ'>Quiz</p>
+                </div>
                 <Link className='Home' to={'/Home'}>Home</Link>
             </div>
         </div>
