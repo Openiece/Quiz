@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import { Header } from "./Header"
 import "./App.css"
 
@@ -10,9 +9,9 @@ function App() {
 				<Header/>
 			</div>
 			<div className='row turulvvd'>
-					<Link className='QuizType' to={'/quiz'}>Anime</Link>
-					<Link className='QuizType' to={'/movie'}>Movie</Link>
-					<Link className='QuizType' to={'/animal'}>Animal</Link>
+					<Link className='QuizType' to={'/quiz'}>Cognitive quiz</Link>
+					<Link className='QuizType' to={'/movie'}>Movie quiz</Link>
+					<Link className='QuizType' to={'/animal'}>Animal quiz</Link>
 			</div>
 		</div>
 		

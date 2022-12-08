@@ -37,8 +37,6 @@ body {
   font-size: 24px;
   align-items: center;
 }
-
-/* QUESTION/TIMER/LEFT SECTION */
 .question-section {
   width: 100%;
   position: relative;
@@ -66,7 +64,6 @@ body {
   text-align: center;
 }
 
-/* ANSWERS/RIGHT SECTION */
 .answer-section {
   width: 100%;
   display: flex;
@@ -135,7 +132,7 @@ button svg {
   text-decoration: none; 
   font-size: 40px;
   line-height: 64px;
-  width: 200px;
+  width: auto;
   height: 70px;
   background-color: #3c4966;
   text-align: center;
