@@ -1,5 +1,7 @@
+
+
 import React, { useState } from 'react';
-import { Header } from "../Header"
+
 
 
 export function Random() {
@@ -40,60 +42,6 @@ export function Random() {
 				{ answerText: '7', isCorrect: true },
 			],
 		},
-		{
-			questionText: 'What does BBC stands for?',
-			answerOptions: [
-				{ answerText: 'British Broadcasting Company', isCorrect: false },
-				{ answerText: 'British Broadcasting Corporation', isCorrect: true },
-				{ answerText: 'British Broadcasting Corporate', isCorrect: false },
-				{ answerText: 'Big Black C', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'How many days are in a leap year?',
-			answerOptions: [
-				{ answerText: '364', isCorrect: false },
-				{ answerText: '363', isCorrect: false },
-				{ answerText: '365', isCorrect: false },
-				{ answerText: '366', isCorrect: true },
-			],
-		},
-		{
-			questionText: 'In fashion, what does YSL stand for?',
-			answerOptions: [
-				{ answerText: 'Yves Sain Laurent', isCorrect: false },
-				{ answerText: 'Yve Saint Laurent', isCorrect: false },
-				{ answerText: 'Yves Saint Laury', isCorrect: false },
-				{ answerText: 'Yves Saint Laurent', isCorrect: true },
-			],
-		},
-		{
-			questionText: 'What is smallest country in the world?',
-			answerOptions: [
-				{ answerText: 'Tuvalu', isCorrect: false },
-				{ answerText: 'Nauru', isCorrect: false },
-				{ answerText: 'Monaca', isCorrect: false },
-				{ answerText: 'Vatican', isCorrect: true },
-			],
-		},
-		{
-			questionText: 'Can you name the planet that is closest to the Sun?',
-			answerOptions: [
-				{ answerText: 'Jupiter', isCorrect: false },
-				{ answerText: 'Mars', isCorrect: false },
-				{ answerText: 'Venus', isCorrect: false },
-				{ answerText: 'Mercury', isCorrect: true },
-			],
-		},
-		{
-			questionText: 'How many vowels are there in the English alphabet?',
-			answerOptions: [
-				{ answerText: '3', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '5', isCorrect: false },
-				{ answerText: '6', isCorrect: true },
-			],
-		},
 	];
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -114,7 +62,6 @@ export function Random() {
 	};
 	return (
 		<div className='app'>
-			<Header/>
 			{showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}

@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-import { Header } from "./Header"
 
 
 export function Movie() {
@@ -44,7 +43,7 @@ export function Movie() {
         {
 			questionText: 'Which Disney movie features the "You Can Fly" song?',
 			answerOptions: [
-				{ answerText: 'Aladin', isCorrect: false },
+				{ answerText: 'Alladin', isCorrect: false },
 				{ answerText: 'The lion king', isCorrect: false },
 				{ answerText: 'Peter pan', isCorrect: true },
 				{ answerText: 'The Hunchback of Notre Dame', isCorrect: false },
@@ -115,7 +114,6 @@ export function Movie() {
 	};
 	return (
 		<div className='app'>
-            <Header/>
 			{showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}

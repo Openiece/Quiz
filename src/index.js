@@ -1,12 +1,13 @@
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
-import App from './App';
+import {App} from './App';
 import {Random} from "./component/question"
 import {Animal} from "./animal"
 import {Movie} from "./movie"
 import {Anime} from "./anime"
+import {Country} from "./country"
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -17,6 +18,7 @@ ReactDOM.render(
             <Route path="/animal" element={<Animal />} />
             <Route path="/movie" element={<Movie />} />
             <Route path="/anime" element={<Anime />} />
+            <Route path="/country" element={<Country />} />
         </Routes>
     </BrowserRouter>
   </React.StrictMode>,

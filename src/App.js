@@ -1,22 +1,23 @@
-import React, { useState } from 'react';
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import { Header } from "./Header"
 import "./App.css"
 
-function App() {
+export function App() {
 	return (
 		<div>
 			<div className='Header'>
 				<Header/>
 			</div>
+			<div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
 			<div className='row turulvvd'>
-					<Link className='QuizType' to={'/anime'}>Anime</Link>
-					<Link className='QuizType' to={'/movie'}>Movie</Link>
-					<Link className='QuizType' to={'/animal'}>Animal</Link>
-					<Link className='QuizType' to={'/quiz'}>Random</Link>
+					<Link className='QuizType' to={'/anime'}>Anime quiz</Link>
+					<Link className='QuizType' to={'/movie'}>Movie quiz</Link>
+					<Link className='QuizType' to={'/animal'}>Animal quiz</Link>
+					<Link className='QuizType' to={'/quiz'}>Random quiz</Link>
+					<Link className='QuizType' to={'/country'}>Country quiz</Link>
+			</div>
 			</div>
 		</div>
 		
 	);
-};
-export default App;		
+};	

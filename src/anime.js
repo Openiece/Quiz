@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Header } from "./Header";
 
 export function Anime() {
   const questions = [
@@ -86,6 +87,7 @@ export function Anime() {
   };
   return (
     <div className="app">
+      <Header />
       {showScore ? (
         <div className="score-section">
           You scored {score} out of {questions.length}
