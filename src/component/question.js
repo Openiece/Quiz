@@ -113,7 +113,7 @@ export function Random() {
 		}
 	};
 	return (
-		<div className='app'>
+		<div className='app column'>
 			<Header/>
 			{showScore ? (
 				<div className='score-section'>
@@ -129,7 +129,7 @@ export function Random() {
 					</div>
 					<div className='answer-section'>
 						{questions[currentQuestion].answerOptions.map((answerOption) => (
-							<button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+							<button className='Answer-button' onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
 						))}
 					</div>
 				</>

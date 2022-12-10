@@ -15,6 +15,7 @@ export function App() {
 					<Link className='QuizType' to={'/animal'}>Animal quiz</Link>
 					<Link className='QuizType' to={'/quiz'}>Random quiz</Link>
 					<Link className='QuizType' to={'/country'}>Country quiz</Link>
+					<Link className='QuizType' to={'/language'}>Language quiz</Link>
 			</div>
 			</div>
 		</div>

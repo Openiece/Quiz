@@ -8,6 +8,7 @@ import {Animal} from "./animal"
 import {Movie} from "./movie"
 import {Anime} from "./anime"
 import {Country} from "./country"
+import { Language } from './language';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -19,6 +20,7 @@ ReactDOM.render(
             <Route path="/movie" element={<Movie />} />
             <Route path="/anime" element={<Anime />} />
             <Route path="/country" element={<Country />} />
+            <Route path="/language" element={<Language />} />
         </Routes>
     </BrowserRouter>
   </React.StrictMode>,
